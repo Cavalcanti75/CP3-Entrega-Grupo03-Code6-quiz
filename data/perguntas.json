@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "categoria": "Fundamentos Web",
+    "pergunta": "Qual linguagem é usada para estruturar o conteúdo de uma página web?",
+    "alternativas": [
+      "CSS",
+      "HTML",
+      "SQL",
+      "Python"
+    ],
+    "resposta": 1,
+    "explicacao": "HTML organiza o conteúdo da página com elementos como títulos, parágrafos, links e imagens.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content"
+  },
+  {
+    "id": 2,
+    "categoria": "Estilo e design",
+    "pergunta": "Qual tecnologia controla principalmente as cores, fontes e o layout de uma página?",
+    "alternativas": [
+      "CSS",
+      "HTML",
+      "Git",
+      "MySQL"
+    ],
+    "resposta": 0,
+    "explicacao": "CSS define a aparência visual dos elementos HTML, como cores, fontes e espaçamentos.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Styling_basics"
+  },
+  {
+    "id": 3,
+    "categoria": "JavaScript",
+    "pergunta": "Qual destas tecnologias permite adicionar interatividade a uma página web?",
+    "alternativas": [
+      "JPEG",
+      "JavaScript",
+      "Figma",
+      "HTTP"
+    ],
+    "resposta": 1,
+    "explicacao": "JavaScript permite responder a ações do usuário e alterar o conteúdo de uma página dinamicamente.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting"
+  },
+  {
+    "id": 4,
+    "categoria": "Estrutura HTML",
+    "pergunta": "Qual tag HTML representa o título principal de uma página ou seção?",
+    "alternativas": [
+      "<p>",
+      "<img>",
+      "<h1>",
+      "<footer>"
+    ],
+    "resposta": 2,
+    "explicacao": "A tag h1 representa um título de nível principal. Ela ajuda a organizar semanticamente o conteúdo.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements"
+  },
+  {
+    "id": 5,
+    "categoria": "Links e navegação",
+    "pergunta": "Qual tag HTML é usada para criar um link clicável?",
+    "alternativas": [
+      "<a>",
+      "<div>",
+      "<button>",
+      "<link>"
+    ],
+    "resposta": 0,
+    "explicacao": "A tag a (âncora) cria um link para outra página, arquivo ou endereço, normalmente usando o atributo href.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+  }
+]
