@@ -1,6 +1,6 @@
-# CODE6 QUIZ — Tecnologia em jogo
+# CP2 — CODE6 QUIZ
 
-Projeto acadêmico **CP1 — Desenvolvimento Front-end para Web**. O CODE6 QUIZ é um quiz visual sobre fundamentos de tecnologia, programação e internet.
+Projeto acadêmico **CP2 — Desenvolvimento Front-end para Web**. O CODE6 QUIZ é um jogo de perguntas e respostas sobre HTML, CSS, JavaScript, DOM, JSON, Web Storage, Git e fundamentos de desenvolvimento web.
 
 ## Integrantes
 
@@ -11,18 +11,34 @@ Projeto acadêmico **CP1 — Desenvolvimento Front-end para Web**. O CODE6 QUIZ 
 - Lucas Matos Gomes
 - Samuel Bole
 
-## Tema
+## Funcionalidades implementadas
 
-**Tecnologia e programação.** O projeto apresenta uma página inicial com identidade visual própria, uma estrutura de tela de jogo e perguntas modelo em JSON.
+- Perguntas carregadas dinamicamente de `data/perguntas.json` por meio de `fetch`.
+- Solicitação do nome do jogador antes do início.
+- Exibição de uma pergunta por vez e validação de resposta.
+- Pontuação final e feedback textual com explicação para cada questão.
+- Link da fonte de referência em cada explicação.
+- Ranking com até cinco resultados armazenados em `sessionStorage`.
+- Opção de jogar novamente sem recarregar a página.
+- Navegação por teclado, foco visível e feedback que não depende apenas de cores.
+- Layout responsivo para desktop e dispositivos móveis.
+- Menu fixo durante a rolagem e botão de voltar ao topo.
+- Publicação planejada pelo GitHub Pages com HTTPS.
 
-## Estrutura de arquivos
+## Conteúdos das perguntas
+
+O arquivo JSON contém 15 questões sobre HTML semântico, links e imagens, CSS, espaçamento, media queries, Flexbox, variáveis JavaScript, DOM, eventos, JSON, Fetch API, sessionStorage e Git.
+
+Cada objeto de pergunta possui `id`, `categoria`, `pergunta`, `alternativas`, `resposta` (índice começando em zero), `explicacao` e `fonte` (URL).
+
+## Estrutura
 
 ```text
-CODE6_QUIZ_FINAL/
+cp2-entreg-grupo3/
 ├── index.html
 ├── README.md
 ├── .gitignore
-├── assets/
+├── img/
 │   └── code6-quiz-logo.png
 ├── data/
 │   └── perguntas.json
@@ -32,22 +48,23 @@ CODE6_QUIZ_FINAL/
     └── script.js
 ```
 
-## Conteúdo do `perguntas.json`
+## Como executar localmente
 
-Cada pergunta possui `id`, `categoria`, `pergunta`, `alternativas`, `resposta` (índice começando em zero), `explicacao` e `fonte` (URL). O arquivo contém perguntas modelo. A interação principal do quiz está implementada em `js/script.js`.
+Como o projeto carrega o JSON com `fetch`, não abra o `index.html` diretamente com `file://`. Execute por um servidor local, por exemplo a extensão **Live Server** do Visual Studio Code, ou acesse a versão publicada no GitHub Pages.
 
+## Entrega CP2
 
-## Checklist para Blackboard
+Antes de enviar:
+- [x] Testar o fluxo completo: nome → perguntas → pontuação → ranking → jogar novamente.
+- [x] Testar a navegação usando somente Tab, Enter e Espaço.
+- [x] Conferir o ranking em DevTools → Application → Session Storage.
+- [x] Testar em janela anônima.
+- [x] Publicar o site com HTTPS.
+- [x] Criar e enviar a tag `cp2-entrega`.
 
-- [x] Tema e integrantes registrados neste README.
-- [x] Todos os arquivos enviados ao GitHub.
-- [x] Todos os integrantes adicionados como colaboradores.
-- [x] Página inicial e quiz funcionando.
-- [x] Perguntas com respostas, explicações e fontes.
-- [x] Site publicado com HTTPS pelo GitHub Pages.
-- [x] Tag `cp1-entrega` criada e enviada.
-- [x] Link do repositório e link do site testados em janela anônima.
+Comandos da tag:
 
-## Sobre o CP - Grupo 03
-
-O CODE6 QUIZ apresenta uma interface responsiva para testar conhecimentos básicos de desenvolvimento web. O projeto pode ser ampliado em etapas futuras com novos conjuntos de perguntas e recursos.
+```bash
+git tag -a cp2-entrega -m "Entrega CP2: lógica e interatividade"
+git push origin cp2-entrega
+```

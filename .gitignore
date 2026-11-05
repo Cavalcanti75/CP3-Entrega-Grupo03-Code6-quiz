@@ -1,9 +1,6 @@
-# Sistema operacional
+# Sistema operacional e editores
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Editores
 .vscode/
 .idea/
 

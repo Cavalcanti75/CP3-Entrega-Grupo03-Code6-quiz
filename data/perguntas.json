@@ -1,72 +1,212 @@
 [
   {
     "id": 1,
-    "categoria": "Fundamentos Web",
-    "pergunta": "Qual linguagem é usada para estruturar o conteúdo de uma página web?",
+    "categoria": "HTML",
+    "pergunta": "Qual é a função principal do HTML em uma página web?",
     "alternativas": [
-      "CSS",
-      "HTML",
-      "SQL",
-      "Python"
+      "Definir a estrutura e o conteúdo",
+      "Controlar o banco de dados",
+      "Criar animações 3D",
+      "Gerenciar versões"
     ],
-    "resposta": 1,
-    "explicacao": "HTML organiza o conteúdo da página com elementos como títulos, parágrafos, links e imagens.",
+    "resposta": 0,
+    "explicacao": "HTML é a linguagem de marcação usada para estruturar títulos, textos, imagens, links e outros elementos.",
     "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content"
   },
   {
     "id": 2,
-    "categoria": "Estilo e design",
-    "pergunta": "Qual tecnologia controla principalmente as cores, fontes e o layout de uma página?",
+    "categoria": "HTML",
+    "pergunta": "Qual elemento HTML representa o conteúdo principal e exclusivo da página?",
     "alternativas": [
-      "CSS",
-      "HTML",
-      "Git",
-      "MySQL"
+      "<footer>",
+      "<main>",
+      "<aside>",
+      "<head>"
     ],
-    "resposta": 0,
-    "explicacao": "CSS define a aparência visual dos elementos HTML, como cores, fontes e espaçamentos.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Styling_basics"
+    "resposta": 1,
+    "explicacao": "O elemento main identifica o conteúdo dominante do documento e deve representar a área principal da página.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/main"
   },
   {
     "id": 3,
-    "categoria": "JavaScript",
-    "pergunta": "Qual destas tecnologias permite adicionar interatividade a uma página web?",
+    "categoria": "HTML",
+    "pergunta": "Qual atributo da tag <a> define o destino de um link?",
     "alternativas": [
-      "JPEG",
-      "JavaScript",
-      "Figma",
-      "HTTP"
+      "src",
+      "alt",
+      "href",
+      "target"
     ],
-    "resposta": 1,
-    "explicacao": "JavaScript permite responder a ações do usuário e alterar o conteúdo de uma página dinamicamente.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting"
+    "resposta": 2,
+    "explicacao": "O atributo href informa o endereço para o qual o link deve direcionar o usuário.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
   },
   {
     "id": 4,
-    "categoria": "Estrutura HTML",
-    "pergunta": "Qual tag HTML representa o título principal de uma página ou seção?",
+    "categoria": "HTML",
+    "pergunta": "Para que serve o atributo alt em uma imagem?",
     "alternativas": [
-      "<p>",
-      "<img>",
-      "<h1>",
-      "<footer>"
+      "Alterar o tamanho da imagem",
+      "Fornecer texto alternativo",
+      "Criar uma borda",
+      "Abrir a imagem em outra aba"
     ],
-    "resposta": 2,
-    "explicacao": "A tag h1 representa um título de nível principal. Ela ajuda a organizar semanticamente o conteúdo.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements"
+    "resposta": 1,
+    "explicacao": "O texto alternativo descreve a imagem para leitores de tela e também pode ser exibido quando ela não carrega.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img"
   },
   {
     "id": 5,
-    "categoria": "Links e navegação",
-    "pergunta": "Qual tag HTML é usada para criar um link clicável?",
+    "categoria": "CSS",
+    "pergunta": "Qual propriedade CSS altera a cor do texto?",
     "alternativas": [
-      "<a>",
-      "<div>",
-      "<button>",
-      "<link>"
+      "background-color",
+      "font-style",
+      "color",
+      "text-align"
+    ],
+    "resposta": 2,
+    "explicacao": "A propriedade color define a cor do conteúdo textual de um elemento.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/color"
+  },
+  {
+    "id": 6,
+    "categoria": "CSS",
+    "pergunta": "Qual propriedade cria espaço interno entre o conteúdo e a borda?",
+    "alternativas": [
+      "margin",
+      "padding",
+      "gap",
+      "outline"
+    ],
+    "resposta": 1,
+    "explicacao": "Padding controla o espaçamento interno do elemento, entre o conteúdo e sua borda.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/padding"
+  },
+  {
+    "id": 7,
+    "categoria": "CSS",
+    "pergunta": "Qual recurso é utilizado para adaptar o layout a diferentes tamanhos de tela?",
+    "alternativas": [
+      "Media queries",
+      "SQL queries",
+      "Loops",
+      "Eventos"
     ],
     "resposta": 0,
-    "explicacao": "A tag a (âncora) cria um link para outra página, arquivo ou endereço, normalmente usando o atributo href.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+    "explicacao": "Media queries permitem aplicar regras CSS conforme características do dispositivo, como largura da tela.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+  },
+  {
+    "id": 8,
+    "categoria": "CSS",
+    "pergunta": "No Flexbox, qual propriedade distribui os itens no eixo principal?",
+    "alternativas": [
+      "align-items",
+      "flex-wrap",
+      "justify-content",
+      "font-weight"
+    ],
+    "resposta": 2,
+    "explicacao": "justify-content controla a distribuição e o alinhamento dos itens ao longo do eixo principal do flex container.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/justify-content"
+  },
+  {
+    "id": 9,
+    "categoria": "JavaScript",
+    "pergunta": "Qual palavra-chave declara uma variável que pode receber outro valor?",
+    "alternativas": [
+      "const",
+      "let",
+      "static",
+      "href"
+    ],
+    "resposta": 1,
+    "explicacao": "let declara uma variável com escopo de bloco cujo valor pode ser reatribuído.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let"
+  },
+  {
+    "id": 10,
+    "categoria": "JavaScript",
+    "pergunta": "Qual método seleciona um elemento pelo seu ID no DOM?",
+    "alternativas": [
+      "document.querySelectorAll()",
+      "document.getElementById()",
+      "window.alert()",
+      "console.log()"
+    ],
+    "resposta": 1,
+    "explicacao": "getElementById retorna o elemento cujo atributo id corresponde ao valor informado.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById"
+  },
+  {
+    "id": 11,
+    "categoria": "JavaScript",
+    "pergunta": "Qual método adiciona um ouvinte para uma ação, como o clique de um botão?",
+    "alternativas": [
+      "addEventListener()",
+      "appendFile()",
+      "innerHTML()",
+      "JSON.parse()"
+    ],
+    "resposta": 0,
+    "explicacao": "addEventListener registra uma função para ser executada quando o evento especificado acontece.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener"
+  },
+  {
+    "id": 12,
+    "categoria": "JavaScript",
+    "pergunta": "Para que serve JSON.parse()?",
+    "alternativas": [
+      "Transformar objeto em texto JSON",
+      "Converter texto JSON em objeto JavaScript",
+      "Apagar dados do navegador",
+      "Enviar formulário"
+    ],
+    "resposta": 1,
+    "explicacao": "JSON.parse interpreta uma string JSON e cria o valor JavaScript correspondente.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+  },
+  {
+    "id": 13,
+    "categoria": "JavaScript",
+    "pergunta": "Qual comando permite carregar dados de um arquivo ou endereço de forma assíncrona?",
+    "alternativas": [
+      "fetch()",
+      "prompt()",
+      "parseInt()",
+      "document.write()"
+    ],
+    "resposta": 0,
+    "explicacao": "fetch realiza requisições e retorna uma Promise que permite tratar a resposta recebida.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch"
+  },
+  {
+    "id": 14,
+    "categoria": "Web Storage",
+    "pergunta": "Qual armazenamento mantém os dados apenas durante a sessão da aba?",
+    "alternativas": [
+      "localStorage",
+      "sessionStorage",
+      "cookies permanentes",
+      "cache CSS"
+    ],
+    "resposta": 1,
+    "explicacao": "sessionStorage mantém os dados durante a sessão da página e os remove quando a aba ou janela é encerrada.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage"
+  },
+  {
+    "id": 15,
+    "categoria": "Git",
+    "pergunta": "Qual comando envia commits locais para um repositório remoto?",
+    "alternativas": [
+      "git add",
+      "git status",
+      "git push",
+      "git init"
+    ],
+    "resposta": 2,
+    "explicacao": "git push atualiza o repositório remoto com os commits da branch local.",
+    "fonte": "https://git-scm.com/docs/git-push"
   }
 ]

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CODE6 QUIZ: um quiz sobre tecnologia, programação e internet.">
-  <title>CODE6 QUIZ | Tecnologia em jogo</title>
+  <meta name="description" content="CODE6 QUIZ CP2: desafio interativo de HTML, CSS, JavaScript, Git e desenvolvimento web.">
+  <title>CP2 — CODE6 QUIZ | Lógica e interatividade</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
-<body>
+<body id="top">
   <header class="topbar">
-    <a class="brand" href="index.html" aria-label="CODE6 QUIZ, página inicial"><img class="brand-logo" src="img/code6-quiz-logo.png" alt="CODE6 QUIZ"></a>
+    <a class="brand" href="#top" aria-label="CODE6 QUIZ, página inicial"><img class="brand-logo" src="img/code6-quiz-logo.png" alt="CODE6 QUIZ"></a>
     <nav aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
       <a href="#como-funciona">Como jogar</a>
@@ -21,27 +21,27 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> APRENDA • TESTE • EVOLUA</p>
+        <p class="eyebrow"><span class="pulse"></span>APRENDA • TESTE • EVOLUA</p>
         <h1>Seu próximo nível<br>começa com um <span>quiz.</span></h1>
-        <p class="hero-description">Desafie seus conhecimentos sobre tecnologia, programação e o universo digital. Cada pergunta é uma oportunidade de aprender algo novo.</p>
+        <p class="hero-description">Teste seus conhecimentos sobre HTML, CSS, JavaScript, DOM, JSON, Git e desenvolvimento web. Responda, aprenda com as explicações e acompanhe sua pontuação.</p>
         <a class="button button-primary" href="#jogo">Começar agora <span aria-hidden="true">↗</span></a>
         <div class="hero-stats">
-          <div><strong>03+</strong><span>questões modelo</span></div>
-          <div><strong>100%</strong><span>curiosidade</span></div>
-          <div><strong>∞</strong><span>possibilidades</span></div>
+          <div><strong>15</strong><span>perguntas</span></div>
+          <div><strong>100%</strong><span>interativo</span></div>
+          <div><strong>∞</strong><span>tentativas</span></div>
         </div>
       </div>
       <div class="hero-art" aria-label="Ilustração decorativa de uma interface digital">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="floating-chip chip-top">{"</>"}</div>
         <div class="quiz-window">
-          <div class="window-top"><span></span><span></span><span></span><small>DESAFIO #001</small></div>
+          <div class="window-top"><span></span><span></span><span></span><small>CP2 / DESAFIO</small></div>
           <div class="window-content">
-            <div class="mini-label">PERGUNTA 01 <span>• 03</span></div>
-            <div class="fake-question">Qual linguagem estrutura o conteúdo de uma página web?</div>
-            <div class="fake-answer"><b>A</b> CSS <span>×</span></div>
-            <div class="fake-answer correct"><b>B</b> HTML <span>✓</span></div>
-            <div class="fake-answer"><b>C</b> SQL <span></span></div>
+            <div class="mini-label">PERGUNTA <span>• 15</span></div>
+            <div class="fake-question">Qual tecnologia adiciona interatividade às páginas?</div>
+            <div class="fake-answer"><b>A</b> HTML <span>×</span></div>
+            <div class="fake-answer correct"><b>B</b> JavaScript <span>✓</span></div>
+            <div class="fake-answer"><b>C</b> CSS <span></span></div>
             <div class="progress"><span></span></div>
           </div>
         </div>
@@ -51,53 +51,74 @@
     </section>
 
     <section class="topic-strip" aria-label="Temas do quiz">
-      <span>⌘ <b>TECNOLOGIA</b></span><span>／ <b>PROGRAMAÇÃO</b></span><span>◎ <b>INTERNET</b></span><span>▦ <b>INOVAÇÃO</b></span>
+      <span>⌘ <b>HTML</b></span><span>／ <b>CSS</b></span><span>◎ <b>JAVASCRIPT</b></span><span>▦ <b>GIT E WEB</b></span>
     </section>
 
     <section class="section about" id="sobre">
       <div class="section-heading"><p class="eyebrow">01 — SOBRE O PROJETO</p><h2>Conhecimento que<br><span>vira experiência.</span></h2></div>
-      <div class="about-copy"><p>O CODE6 QUIZ é um projeto acadêmico de desenvolvimento front-end criado para tornar o aprendizado de tecnologia mais leve, visual e interativo.</p><p>Nesta primeira etapa (CP1), apresentamos a identidade visual, a estrutura da tela de jogo e um conjunto de perguntas em JSON. A lógica completa poderá evoluir nas próximas etapas.</p></div>
+      <div class="about-copy"><p>O CODE6 QUIZ é um projeto acadêmico de desenvolvimento front-end que transforma os conteúdos da matéria em um jogo de perguntas e respostas.</p><p>No CP2, o quiz passa a carregar as questões de um arquivo JSON, solicitar o nome do jogador, validar respostas, calcular a pontuação, registrar o ranking da sessão e permitir uma nova partida.</p></div>
     </section>
 
     <section class="section how" id="como-funciona">
       <div class="section-heading centered"><p class="eyebrow">02 — SIMPLES ASSIM</p><h2>Três passos. <span>Uma nova ideia.</span></h2></div>
       <div class="steps">
-        <article class="step-card"><div class="step-number">01</div><div class="step-icon">⌁</div><h3>Escolha o desafio</h3><p>Leia a pergunta e observe as alternativas disponíveis.</p></article>
-        <article class="step-card"><div class="step-number">02</div><div class="step-icon">◉</div><h3>Pense e responda</h3><p>Compare as opções e escolha a resposta que considera correta.</p></article>
-        <article class="step-card"><div class="step-number">03</div><div class="step-icon">↗</div><h3>Aprenda algo novo</h3><p>Confira a explicação e explore a fonte indicada.</p></article>
+        <article class="step-card"><div class="step-number">01</div><div class="step-icon">⌁</div><h3>Identifique-se</h3><p>Informe seu nome para iniciar a partida e registrar sua pontuação.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-icon">◉</div><h3>Pense e responda</h3><p>Responda uma pergunta por vez, usando o mouse ou o teclado.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-icon">↗</div><h3>Veja seu resultado</h3><p>Confira a pontuação, o ranking da sessão e jogue novamente.</p></article>
       </div>
     </section>
 
     <section class="section game-section" id="jogo">
-      <div class="section-heading"><p class="eyebrow">03 — ÁREA DE JOGO</p><h2>Hora de testar<br><span>seu conhecimento.</span></h2><p class="muted">Responda às cinco perguntas e confira seu resultado no final.</p></div>
+      <div class="section-heading"><p class="eyebrow">03 — ÁREA DE JOGO</p><h2>Hora de testar<br><span>seu conhecimento.</span></h2><p class="muted">São 15 perguntas sobre os conteúdos de desenvolvimento front-end. Cada resposta apresenta uma explicação e uma fonte para consulta.</p></div>
       <div class="game-card" id="quiz-app">
-        <div class="game-top"><span class="game-tag">CODE6 QUIZ / DESAFIO</span><span class="question-count">Pergunta <b id="current-number">1</b> de <b id="total-number">5</b></span></div>
-        <div class="progress-track"><span id="quiz-progress"></span></div>
-        <p class="question-category" id="question-category">FUNDAMENTOS WEB</p>
-        <h3 id="question-text">Qual linguagem é usada para estruturar o conteúdo de uma página web?</h3>
-        <div class="answers" id="answers-list">
-          <button class="answer" type="button" data-index="0"><span class="answer-letter">A</span><span class="answer-label">CSS</span><span class="answer-symbol">＋</span></button>
-          <button class="answer" type="button" data-index="1"><span class="answer-letter">B</span><span class="answer-label">HTML</span><span class="answer-symbol">＋</span></button>
-          <button class="answer" type="button" data-index="2"><span class="answer-letter">C</span><span class="answer-label">SQL</span><span class="answer-symbol">＋</span></button>
-          <button class="answer" type="button" data-index="3"><span class="answer-letter">D</span><span class="answer-label">Python</span><span class="answer-symbol">＋</span></button>
-        </div>
-        <div class="feedback" id="feedback-box" aria-live="polite">
-          <span class="feedback-icon">i</span>
-          <div><strong id="feedback-title">Escolha uma alternativa</strong><p id="feedback-text">Selecione uma resposta para continuar.</p></div>
-        </div>
-        <div class="quiz-actions">
-          <button class="button button-secondary" id="next-button" type="button" disabled>Próxima pergunta <span>→</span></button>
-          <button class="button button-secondary" id="restart-button" type="button" hidden>Jogar novamente <span>↻</span></button>
-        </div>
-        <p class="prototype-note" id="prototype-note" aria-live="polite">Selecione uma alternativa para habilitar o avanço.</p>
+        <section id="start-screen" class="start-screen">
+          <p class="game-tag">CODE6 QUIZ / CP2</p>
+          <h3>Pronto para o desafio?</h3>
+          <p>Digite seu nome para começar. Sua pontuação será registrada no ranking desta sessão.</p>
+          <label for="player-name">Nome do jogador</label>
+          <input id="player-name" type="text" maxlength="24" autocomplete="name" placeholder="Ex.: Nataly" required>
+          <p id="start-error" class="form-error" role="alert"></p>
+          <button class="button button-primary" id="start-button" type="button">Começar quiz <span>→</span></button>
+        </section>
+
+        <section id="play-screen" hidden>
+          <div class="game-top"><span class="game-tag">CODE6 QUIZ / DESAFIO</span><span class="question-count">Pergunta <b id="current-number">1</b> de <b id="total-number">15</b></span></div>
+          <div class="player-line">Jogador: <strong id="player-label"></strong></div>
+          <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><span id="quiz-progress"></span></div>
+          <p class="question-category" id="question-category">FUNDAMENTOS WEB</p>
+          <h3 id="question-text">Carregando pergunta...</h3>
+          <div class="answers" id="answers-list"></div>
+          <div class="feedback" id="feedback-box" aria-live="polite">
+            <span class="feedback-icon" aria-hidden="true">i</span>
+            <div><strong id="feedback-title">Escolha uma alternativa</strong><p id="feedback-text">Selecione uma resposta para conferir a explicação.</p></div>
+          </div>
+          <div class="quiz-actions">
+            <button class="button button-secondary" id="next-button" type="button" disabled>Próxima pergunta <span>→</span></button>
+          </div>
+          <p class="prototype-note" id="prototype-note" aria-live="polite">Use Tab e Enter para navegar pelas alternativas.</p>
+        </section>
+
+        <section id="result-screen" hidden>
+          <p class="game-tag">RESULTADO FINAL</p>
+          <h3 id="result-heading">Fim de jogo!</h3>
+          <p class="result-score" id="result-score"></p>
+          <p id="result-message"></p>
+          <h4>Ranking desta sessão</h4>
+          <ol id="ranking-list" class="ranking-list"></ol>
+          <button class="button button-primary" id="restart-button" type="button">Jogar novamente <span>↻</span></button>
+        </section>
+        <p id="load-error" class="form-error" role="alert" hidden>Não foi possível carregar as perguntas. Abra o site publicado ou use um servidor local, como Live Server no VS Code.</p>
       </div>
     </section>
 
     <section class="team-section">
       <div><p class="eyebrow">04 — FEITO EM EQUIPE</p><h2>Ideias diferentes.<br><span>Um só projeto.</span></h2></div>
-      <p>Construído colaborativamente por estudantes de Análise e Desenvolvimento de Sistemas, unindo estrutura, estilo e organização de conteúdo.</p>
+      <p>Construído colaborativamente por estudantes de Análise e Desenvolvimento de Sistemas, unindo estrutura, estilo, lógica e organização de conteúdo.</p>
     </section>
   </main>
-  <footer><a class="brand footer-brand" href="#top" aria-label="CODE6 QUIZ, voltar ao início"><img class="brand-logo" src="img/code6-quiz-logo.png" alt="CODE6 QUIZ"></a><p>CP1 • Desenvolvimento Front-end para Web</p><a href="#top" class="back-top">Voltar ao topo ↑</a></footer>
+    <footer><a class="brand footer-brand" href="#top" aria-label="CODE6 QUIZ, voltar ao início"><img class="brand-logo" src="img/code6-quiz-logo.png" 
+        alt="CODE6 QUIZ"></a><p>CP2 • Desenvolvimento Front-end para Web</p>
+    </footer>
+  <a href="#top" class="back-top-float" aria-label="Voltar ao topo">↑ <span>Voltar ao topo</span></a>
 </body>
 </html>
