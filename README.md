@@ -48,6 +48,6 @@ Cada pergunta possui `id`, `categoria`, `pergunta`, `alternativas`, `resposta` (
 - [ ] Tag `cp1-entrega` criada e enviada.
 - [ ] Link do repositório e link do site testados em janela anônima.
 
-## Sobre o CP1
+## Sobre o CP - Grupo 03
 
 O CODE6 QUIZ apresenta uma interface responsiva para testar conhecimentos básicos de desenvolvimento web. O projeto pode ser ampliado em etapas futuras com novos conjuntos de perguntas e recursos.
