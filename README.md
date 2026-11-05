@@ -39,14 +39,14 @@ Cada pergunta possui `id`, `categoria`, `pergunta`, `alternativas`, `resposta` (
 
 ## Checklist para Blackboard
 
-- [ ] Tema e integrantes registrados neste README.
-- [ ] Todos os arquivos enviados ao GitHub.
-- [ ] Todos os integrantes adicionados como colaboradores.
-- [ ] Página inicial e quiz funcionando.
-- [ ] Perguntas com respostas, explicações e fontes.
-- [ ] Site publicado com HTTPS pelo GitHub Pages.
-- [ ] Tag `cp1-entrega` criada e enviada.
-- [ ] Link do repositório e link do site testados em janela anônima.
+- [x] Tema e integrantes registrados neste README.
+- [x] Todos os arquivos enviados ao GitHub.
+- [x] Todos os integrantes adicionados como colaboradores.
+- [x] Página inicial e quiz funcionando.
+- [x] Perguntas com respostas, explicações e fontes.
+- [x] Site publicado com HTTPS pelo GitHub Pages.
+- [x] Tag `cp1-entrega` criada e enviada.
+- [x] Link do repositório e link do site testados em janela anônima.
 
 ## Sobre o CP - Grupo 03
 
