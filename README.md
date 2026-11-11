@@ -96,6 +96,6 @@ O grupo deve conferir, antes da apresentação:
 
 ## Entrega final
 
-- Repositório GitHub: https://github.com/Cavalcanti75/CP-Grupo03-code6-quiz
-- Site publicado: https://cavalcanti75.github.io/CP-Grupo03-code6-quiz/
+- Repositório GitHub: [https://github.com/Cavalcanti75/CP-Grupo03-code6-quiz](https://github.com/Cavalcanti75/CP3-Entrega-Grupo03-Code6-quiz.git)
+- Site publicado: [https://cavalcanti75.github.io/CP3-Entrega-Grupo03-Code6-quiz/](https://cavalcanti75.github.io/CP3-Entrega-Grupo03-Code6-quiz/)
 - Dia da Entrega **11/11/2026 — Apresentação dia 17/11/2026 - Aula 13**.
