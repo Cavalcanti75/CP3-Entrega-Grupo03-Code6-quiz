@@ -1,40 +1,62 @@
-# CP2 — CODE6 QUIZ
+# CODE6 QUIZ — CP3 | Entrega final
 
-Projeto acadêmico **CP2 — Desenvolvimento Front-end para Web**. O CODE6 QUIZ é um jogo de perguntas e respostas sobre HTML, CSS, JavaScript, DOM, JSON, Web Storage, Git e fundamentos de desenvolvimento web.
+Projeto acadêmico desenvolvido para a disciplina de **Desenvolvimento Front-end para Web**, como entrega final do grupo. O CODE6 QUIZ é um quiz interativo sobre fundamentos de desenvolvimento web, com perguntas carregadas de um arquivo JSON, feedback explicativo, pontuação e ranking da sessão.
 
 ## Integrantes
 
 - Nataly Barros Cavalcanti
 - Leticia Toledo Fernandes
-- Cayo Felix de Sousa
-- Kelwin Gama de Souza
-- Lucas Matos Gomes
 - Samuel Bole
+- Cayo Felix de Sousa
+- Lucas Matos Gomes
+- Kelwin Gama de Souza
 
-## Funcionalidades implementadas
+## Tema e objetivo
 
-- Perguntas carregadas dinamicamente de `data/perguntas.json` por meio de `fetch`.
-- Solicitação do nome do jogador antes do início.
-- Exibição de uma pergunta por vez e validação de resposta.
-- Pontuação final e feedback textual com explicação para cada questão.
-- Link da fonte de referência em cada explicação.
-- Ranking com até cinco resultados armazenados em `sessionStorage`.
+O projeto utiliza um quiz para revisar e praticar conteúdos de HTML, CSS, JavaScript e ferramentas do desenvolvimento web. 
+A proposta é apresentar perguntas objetivas e após cada resposta, mostrar uma explicação e uma fonte para consulta.
+
+## Funcionalidades
+
+- Carregamento assíncrono das 15 perguntas em `data/perguntas.json`, usando Fetch API.
+- Validação da estrutura dos dados antes de iniciar a partida.
+- Solicitação do nome do jogador.
+- Exibição de uma pergunta por vez.
+- Validação de alternativa, indicação textual de acerto ou erro e explicação.
+- Link para a fonte de referência de cada pergunta.
+- Cálculo e exibição da pontuação final e do percentual de acertos.
+- Ranking dos cinco melhores resultados da sessão, armazenado em `sessionStorage`.
 - Opção de jogar novamente sem recarregar a página.
-- Navegação por teclado, foco visível e feedback que não depende apenas de cores.
+- Navegação por teclado, foco visível e mensagens para tecnologias assistivas.
 - Layout responsivo para desktop e dispositivos móveis.
-- Menu fixo durante a rolagem e botão de voltar ao topo.
-- Publicação planejada pelo GitHub Pages com HTTPS.
+- Menu principal fixo durante a rolagem e botão de retorno ao topo.
 
-## Conteúdos das perguntas
+## Conteúdos abordados
 
-O arquivo JSON contém 15 questões sobre HTML semântico, links e imagens, CSS, espaçamento, media queries, Flexbox, variáveis JavaScript, DOM, eventos, JSON, Fetch API, sessionStorage e Git.
+As perguntas cobrem:
 
-Cada objeto de pergunta possui `id`, `categoria`, `pergunta`, `alternativas`, `resposta` (índice começando em zero), `explicacao` e `fonte` (URL).
+- HTML: estrutura semântica, elemento principal, links e atributo `alt`.
+- CSS: cor, espaçamento interno, media queries e Flexbox.
+- JavaScript: variáveis, seleção de elementos do DOM e eventos.
+- JSON e Fetch API.
+- Web Storage: `sessionStorage`.
+- Git: envio de commits ao repositório remoto.
 
-## Estrutura
+## Regras do quiz
+
+1. O jogador informa o nome antes de iniciar.
+2. As perguntas são apresentadas individualmente.
+3. O jogador seleciona uma alternativa por pergunta.
+4. Após a seleção, o sistema bloqueia novas respostas para aquela pergunta e apresenta o resultado e a explicação.
+5. Ao final, o sistema mostra a pontuação e atualiza o ranking da sessão.
+6. O jogador pode iniciar uma nova partida pelo botão **Jogar novamente**.
+
+O ranking utiliza `sessionStorage`: permanece disponível enquanto a sessão da aba estiver ativa e não é um ranking compartilhado entre dispositivos ou usuários.
+
+## Estrutura do projeto
 
 ```text
-cp2-entreg-grupo3/
+cp3-entrega-grupo03/
 ├── index.html
 ├── README.md
 ├── .gitignore
@@ -48,23 +70,45 @@ cp2-entreg-grupo3/
     └── script.js
 ```
 
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- JSON
+- Fetch API
+- DOM e eventos
+- Web Storage (`sessionStorage`)
+- Git e GitHub Pages
+
 ## Como executar localmente
 
-Como o projeto carrega o JSON com `fetch`, não abra o `index.html` diretamente com `file://`. Execute por um servidor local, por exemplo a extensão **Live Server** do Visual Studio Code, ou acesse a versão publicada no GitHub Pages.
+O quiz utiliza `fetch()` para ler `data/perguntas.json`. Por isso, não abra o `index.html` diretamente pelo endereço `file://`.
 
-## Entrega CP2
+1. Abra a pasta do projeto no Visual Studio Code.
+2. Inicie a extensão **Live Server**.
+3. Abra o endereço local informado pelo Live Server.
 
-Antes de enviar:
-- [x] Testar o fluxo completo: nome → perguntas → pontuação → ranking → jogar novamente.
-- [x] Testar a navegação usando somente Tab, Enter e Espaço.
-- [x] Conferir o ranking em DevTools → Application → Session Storage.
-- [x] Testar em janela anônima.
-- [x] Publicar o site com HTTPS.
-- [x] Criar e enviar a tag `cp2-entrega`.
+Também é possível acessar a versão publicada pelo GitHub Pages:
 
-Comandos da tag:
+**https://cavalcanti75.github.io/CP-Grupo03-code6-quiz/**
 
-```bash
-git tag -a cp2-entrega -m "Entrega CP2: lógica e interatividade"
-git push origin cp2-entrega
-```
+## Verificações de qualidade e acessibilidade
+
+O grupo deve conferir, antes da apresentação:
+
+- Contraste entre texto, fundo, botões e estados de resposta.
+- Foco visível ao navegar com Tab e Shift + Tab.
+- Ativação dos controles com Enter ou Espaço.
+- Texto alternativo (`alt`) na imagem do logotipo e descrição acessível para a ilustração.
+- Feedback de acerto e erro que não dependa somente de cores.
+- Ausência de rolagem horizontal em desktop e dispositivos móveis.
+- Fluxo completo: nome → perguntas → feedback → pontuação → ranking → replay.
+- Carregamento do JSON na versão publicada, e não apenas no Live Server.
+
+## Entrega final
+
+- Repositório GitHub: https://github.com/Cavalcanti75/CP-Grupo03-code6-quiz
+- Site publicado: https://cavalcanti75.github.io/CP-Grupo03-code6-quiz/
+- Tag de entrega: `cp3-entrega`
+- Prazo indicado nas orientações: **17/11/2026 — Aula 13**.

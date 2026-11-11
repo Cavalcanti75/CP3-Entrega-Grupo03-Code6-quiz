@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CODE6 QUIZ CP2: desafio interativo de HTML, CSS, JavaScript, Git e desenvolvimento web.">
-  <title>CP2 — CODE6 QUIZ | Lógica e interatividade</title>
+  <meta name="description" content="CODE6 QUIZ CP3: quiz final de HTML, CSS, JavaScript, DOM, JSON, Web Storage, Git e desenvolvimento web.">
+  <title>CP3 — CODE6 QUIZ | Entrega final</title>
+  <link rel="icon" type="image/png" href="img/code6-quiz-logo.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -31,11 +32,11 @@
           <div><strong>∞</strong><span>tentativas</span></div>
         </div>
       </div>
-      <div class="hero-art" aria-label="Ilustração decorativa de uma interface digital">
+      <div class="hero-art" role="img" aria-label="Ilustração de uma interface de quiz com pergunta, alternativas e indicador de progresso">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="floating-chip chip-top">{"</>"}</div>
         <div class="quiz-window">
-          <div class="window-top"><span></span><span></span><span></span><small>CP2 / DESAFIO</small></div>
+          <div class="window-top"><span></span><span></span><span></span><small>CP3 / VERSÃO FINAL</small></div>
           <div class="window-content">
             <div class="mini-label">PERGUNTA <span>• 15</span></div>
             <div class="fake-question">Qual tecnologia adiciona interatividade às páginas?</div>
@@ -56,7 +57,7 @@
 
     <section class="section about" id="sobre">
       <div class="section-heading"><p class="eyebrow">01 — SOBRE O PROJETO</p><h2>Conhecimento que<br><span>vira experiência.</span></h2></div>
-      <div class="about-copy"><p>O CODE6 QUIZ é um projeto acadêmico de desenvolvimento front-end que transforma os conteúdos da matéria em um jogo de perguntas e respostas.</p><p>No CP2, o quiz passa a carregar as questões de um arquivo JSON, solicitar o nome do jogador, validar respostas, calcular a pontuação, registrar o ranking da sessão e permitir uma nova partida.</p></div>
+      <div class="about-copy"><p>O CODE6 QUIZ é um projeto acadêmico de desenvolvimento front-end que transforma os conteúdos da matéria em um jogo de perguntas e respostas.</p><p>Na versão final, o CODE6 QUIZ reúne o conteúdo e as funcionalidades desenvolvidas nos checkpoints anteriores: questões carregadas de JSON, identificação do jogador, validação das respostas, explicações com fontes, pontuação, ranking da sessão e opção de jogar novamente.</p></div>
     </section>
 
     <section class="section how" id="como-funciona">
@@ -69,10 +70,10 @@
     </section>
 
     <section class="section game-section" id="jogo">
-      <div class="section-heading"><p class="eyebrow">03 — ÁREA DE JOGO</p><h2>Hora de testar<br><span>seu conhecimento.</span></h2><p class="muted">São 15 perguntas sobre os conteúdos de desenvolvimento front-end. Cada resposta apresenta uma explicação e uma fonte para consulta.</p></div>
+      <div class="section-heading"><p class="eyebrow">03 — ÁREA DE JOGO</p><h2>Hora de testar<br><span>seu conhecimento.</span></h2><p class="muted">São 15 perguntas sobre HTML, CSS, JavaScript e ferramentas do desenvolvimento web. Cada resposta apresenta uma explicação e uma fonte para consulta.</p></div>
       <div class="game-card" id="quiz-app">
         <section id="start-screen" class="start-screen">
-          <p class="game-tag">CODE6 QUIZ / CP2</p>
+          <p class="game-tag">CODE6 QUIZ / CP3</p>
           <h3>Pronto para o desafio?</h3>
           <p>Digite seu nome para começar. Sua pontuação será registrada no ranking desta sessão.</p>
           <label for="player-name">Nome do jogador</label>
@@ -82,7 +83,7 @@
         </section>
 
         <section id="play-screen" hidden>
-          <div class="game-top"><span class="game-tag">CODE6 QUIZ / DESAFIO</span><span class="question-count">Pergunta <b id="current-number">1</b> de <b id="total-number">15</b></span></div>
+          <div class="game-top"><span class="game-tag">CODE6 QUIZ / VERSÃO FINAL</span><span class="question-count">Pergunta <b id="current-number">1</b> de <b id="total-number">15</b></span></div>
           <div class="player-line">Jogador: <strong id="player-label"></strong></div>
           <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><span id="quiz-progress"></span></div>
           <p class="question-category" id="question-category">FUNDAMENTOS WEB</p>
@@ -117,7 +118,7 @@
     </section>
   </main>
     <footer><a class="brand footer-brand" href="#top" aria-label="CODE6 QUIZ, voltar ao início"><img class="brand-logo" src="img/code6-quiz-logo.png" 
-        alt="CODE6 QUIZ"></a><p>CP2 • Desenvolvimento Front-end para Web</p>
+        alt="CODE6 QUIZ"></a><p>CP3 • Entrega final — Desenvolvimento Front-end para Web</p>
     </footer>
   <a href="#top" class="back-top-float" aria-label="Voltar ao topo">↑ <span>Voltar ao topo</span></a>
 </body>

@@ -735,7 +735,7 @@ footer {
     display: none !important;
 }
 
-/* Ajustes CP2: navegação fixa, responsividade, acessibilidade e telas do jogo */
+/* Ajustes dos checkpoints: navegação fixa, responsividade, acessibilidade e telas do jogo */
 .topbar {
     position: sticky;
     top: 0;

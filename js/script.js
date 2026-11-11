@@ -1,4 +1,5 @@
-// CODE6 QUIZ CP2 — perguntas carregadas de data/perguntas.json.
+// CODE6 QUIZ — CP3 | Entrega final
+// Carregamento de perguntas, fluxo do jogo, pontuação, ranking e acessibilidade.
 const $ = (selector) => document.querySelector(selector);
 
 const startScreen = $("#start-screen");
@@ -34,10 +35,24 @@ async function loadQuestions() {
     if (!response.ok) throw new Error(`Falha HTTP: ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data) || data.length === 0) throw new Error("O JSON não contém perguntas.");
+    // Confere a estrutura mínima dos dados antes de iniciar o jogo.
+    const validQuestions = data.every((question) =>
+      question &&
+      typeof question.pergunta === "string" &&
+      Array.isArray(question.alternativas) &&
+      question.alternativas.length >= 2 &&
+      Number.isInteger(question.resposta) &&
+      question.resposta >= 0 &&
+      question.resposta < question.alternativas.length &&
+      typeof question.explicacao === "string"
+    );
+    if (!validQuestions) throw new Error("Uma ou mais perguntas possuem estrutura inválida.");
+
     questions = data;
     totalNumber.textContent = questions.length;
+    console.info(`[CODE6 QUIZ CP3] ${questions.length} perguntas carregadas de data/perguntas.json.`);
   } catch (error) {
-    console.error("Erro ao carregar perguntas:", error);
+    console.error("[CODE6 QUIZ CP3] Erro ao carregar perguntas:", error);
     startScreen.hidden = true;
     loadError.hidden = false;
     startButton.disabled = true;
@@ -52,6 +67,7 @@ function beginGame() {
     return;
   }
   playerName = enteredName.slice(0, 24);
+  console.info("[CODE6 QUIZ CP3] Partida iniciada.");
   $("#player-label").textContent = playerName;
   startError.textContent = "";
   currentIndex = 0;
@@ -111,10 +127,15 @@ function selectAnswer(selectedIndex, selectedButton) {
   buttons.forEach((button, index) => {
     button.disabled = true;
     button.querySelector(".answer-symbol").textContent = index === question.resposta ? "✓" : "＋";
+    button.setAttribute(
+      "aria-label",
+      `${button.querySelector(".answer-label").textContent}. ${index === question.resposta ? "Alternativa correta." : "Alternativa incorreta."}`
+    );
     if (index === question.resposta) button.classList.add("is-correct");
   });
 
   const isCorrect = selectedIndex === question.resposta;
+  console.info(`[CODE6 QUIZ CP3] Pergunta ${currentIndex + 1}/${questions.length}: ${isCorrect ? "acerto" : "erro"}.`);
   if (isCorrect) {
     score += 1;
     feedbackTitle.textContent = "Resposta correta!";
@@ -148,7 +169,8 @@ function readRanking() {
   try {
     const stored = JSON.parse(sessionStorage.getItem("code6-ranking") || "[]");
     return Array.isArray(stored) ? stored : [];
-  } catch {
+  } catch (error) {
+    console.warn("[CODE6 QUIZ CP3] Não foi possível ler o ranking da sessão:", error);
     return [];
   }
 }
@@ -163,7 +185,11 @@ function saveRanking() {
     data: Date.now()
   });
   ranking.sort((a, b) => b.pontos - a.pontos || a.data - b.data);
-  sessionStorage.setItem("code6-ranking", JSON.stringify(ranking.slice(0, 5)));
+  try {
+    sessionStorage.setItem("code6-ranking", JSON.stringify(ranking.slice(0, 5)));
+  } catch (error) {
+    console.warn("[CODE6 QUIZ CP3] Não foi possível salvar o ranking nesta sessão:", error);
+  }
 }
 
 function renderRanking() {
@@ -196,6 +222,7 @@ function showResult() {
     : "Partida concluída. Confira o ranking e revise os conteúdos para melhorar na próxima tentativa.";
   saveRanking();
   renderRanking();
+  console.info(`[CODE6 QUIZ CP3] Partida concluída. Pontuação: ${score}/${questions.length}.`);
   restartButton.focus();
 }
 
@@ -220,4 +247,5 @@ restartButton.addEventListener("click", () => {
   renderQuestion();
 });
 
+console.info("[CODE6 QUIZ CP3] JavaScript iniciado. Aplicação pronta para carregar as perguntas.");
 loadQuestions();
