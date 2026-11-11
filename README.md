@@ -81,18 +81,6 @@ cp3-entrega-grupo03/
 - Web Storage (`sessionStorage`)
 - Git e GitHub Pages
 
-## Como executar localmente
-
-O quiz utiliza `fetch()` para ler `data/perguntas.json`. Por isso, não abra o `index.html` diretamente pelo endereço `file://`.
-
-1. Abra a pasta do projeto no Visual Studio Code.
-2. Inicie a extensão **Live Server**.
-3. Abra o endereço local informado pelo Live Server.
-
-Também é possível acessar a versão publicada pelo GitHub Pages:
-
-**https://cavalcanti75.github.io/CP-Grupo03-code6-quiz/**
-
 ## Verificações de qualidade e acessibilidade
 
 O grupo deve conferir, antes da apresentação:
@@ -110,5 +98,4 @@ O grupo deve conferir, antes da apresentação:
 
 - Repositório GitHub: https://github.com/Cavalcanti75/CP-Grupo03-code6-quiz
 - Site publicado: https://cavalcanti75.github.io/CP-Grupo03-code6-quiz/
-- Tag de entrega: `cp3-entrega`
-- Prazo indicado nas orientações: **17/11/2026 — Aula 13**.
+- Dia da Entrega **11/11/2026 — Apresentação dia 17/11/2026 - Aula 13**.
